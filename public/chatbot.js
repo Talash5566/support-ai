@@ -21,7 +21,7 @@
       // ===============================
       const SCRIPT_TAG = document.querySelector("script[data-org-id]");
       const OWNER_ID = SCRIPT_TAG ? SCRIPT_TAG.getAttribute("data-org-id") : null;
-      const API_URL = "http://localhost:3000/api/chat";
+      const API_URL = "https://support-ai-gamma.vercel.app/api/chat";
   
       if (!OWNER_ID) {
         console.error("SupportAI: data-org-id is missing");
