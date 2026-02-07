@@ -17,7 +17,7 @@ export async function GET(req:NextRequest) {
     respopnce.cookies.set("acess_token",session.accessToken,{
     maxAge: 24 * 60 * 60 * 1000,
     httpOnly: true,
-    secure: false,
+    secure: true,
     path: '/',
     })
 
