@@ -201,17 +201,12 @@
   
           typing.remove();
   
-          // ✅ NO QUOTES ISSUE
+         
           addMessage(res.data.reply || res.data, "supportai-bot");
   
         } catch (err) {
-            console.error("SupportAI Full Error:", err);
-            console.error("Response:", err?.response);
-            console.error("Data:", err?.response?.data);
-          
             addMessage(
-              err?.response?.data?.message || 
-              "Server error. Check console.",
+              "Server error.",
               "supportai-bot"
             );
         }
